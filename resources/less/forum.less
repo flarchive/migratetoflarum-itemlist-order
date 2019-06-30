@@ -1,0 +1,91 @@
+@mtf-itemlist-orange: #e7672e;
+@mtf-itemlist-light: #fafafa;
+
+.Itemlist-Order-Item {
+    position: relative;
+    min-height: 50px;
+    margin: 5px 0;
+    border: 2px dashed #dedede;
+    display: flex;
+}
+
+.Itemlist-Order-Original {
+    flex-grow: 1;
+    margin: 5px;
+
+    > * {
+        pointer-events: none;
+    }
+}
+
+.Itemlist-Order-Actions {
+    border-left: 2px dashed #dedede;
+    margin: 5px 5px 5px 0;
+    padding-left: 5px;
+}
+
+.Itemlist-Order-Modal {
+    .ModalManager {
+        display: block;
+    }
+
+    .Modal-content {
+        overflow: visible;
+    }
+
+    .Modal-header {
+        background: @mtf-itemlist-orange;
+    }
+
+    .Modal-header, .Modal-close .Button {
+        color: @mtf-itemlist-light;
+    }
+
+    .Modal-close .Button:hover {
+        color: #dedede;
+    }
+
+    .Modal-body {
+        background: white;
+    }
+
+    h4 {
+        background: #e8ecf3;
+        margin-left: -30px;
+        margin-right: -30px;
+        padding: 10px 30px;
+    }
+
+    // Cancel full width button rule in the discussion nav, except for the original content
+    .DiscussionPage-nav & {
+        .ButtonGroup, .Button {
+            width: auto;
+        }
+
+        .Itemlist-Order-Original .ButtonGroup {
+            // Not reapplying to .Button because it breaks the style of the split-dropdowns
+            width: 100%;
+        }
+    }
+
+    // Cancel custom button styling when the modal is a child of UserCard
+    .UserCard .Button, .UserCard .Button:hover {
+        color: inherit;
+        background: inherit;
+    }
+}
+
+.item-itemlist-order-control .Button {
+    background: @mtf-itemlist-orange;
+    color: @mtf-itemlist-light;
+}
+
+// Show the editor when it's the first child of a SplitDropdown
+// by default that element is hidden and shown as the primary control of the SplitDropdown
+.Dropdown--split {
+    @media @tablet-up {
+        .Dropdown-menu li.item-itemlist-order-editor {
+            display: block;
+        }
+    }
+}
