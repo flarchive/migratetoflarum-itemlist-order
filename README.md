@@ -2,13 +2,14 @@
 
 > **Read-only archive of released versions of migratetoflarum/itemlist-order.** Not for installation: use [Packagist](https://packagist.org/packages/migratetoflarum/itemlist-order) or the [upstream repository](https://github.com/migratetoflarum/itemlist-order).
 
-**0** versions archived · Latest: [`0.1.0-beta.2`](https://github.com/flarchive/migratetoflarum-itemlist-order/tree/archive/v0.1.0-beta.2) · License: `MIT` · Flarum: `^0.1.0-beta.8`
+**2** versions archived · Latest: [`0.1.0-beta.2`](https://github.com/flarchive/migratetoflarum-itemlist-order/tree/archive/v0.1.0-beta.2) · License: `MIT` · Flarum: `^0.1.0-beta.8`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `0.1.0-beta.1` | 2019-06-23 | `^0.1.0-beta.8` | [Browse](https://github.com/flarchive/migratetoflarum-itemlist-order/tree/archive/v0.1.0-beta.1) |
+| `0.1.0-beta.2` | 2019-06-30 | `^0.1.0-beta.8` | [Browse](https://github.com/flarchive/migratetoflarum-itemlist-order/tree/archive/v0.1.0-beta.2) |
 
 Catalog entry: [packages/migratetoflarum-itemlist-order.json](https://github.com/flarchive/archive-index/blob/main/packages/migratetoflarum-itemlist-order.json)
 
